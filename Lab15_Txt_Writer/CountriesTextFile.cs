@@ -13,6 +13,8 @@ namespace Lab15_Txt_Writer
         public static ArrayList readFromFile(string fileName)
         {
             StreamReader readFile;
+            ArrayList countries = new ArrayList();
+
             try
             {
                 readFile = new StreamReader(fileName);
@@ -20,12 +22,11 @@ namespace Lab15_Txt_Writer
             catch (Exception)
             {
                     File.CreateText(fileName);
-                readFile = new StreamReader(fileName);
+                return countries;
             }
 
             //readFile = new StreamReader(fileName);
 
-            ArrayList countries = new ArrayList();
 
             while (true)
             {   

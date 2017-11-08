@@ -15,7 +15,7 @@ namespace Lab15_Txt_Writer
             {
                 Console.WriteLine("1-See the list of Countries\n2-Add a country\n3-Remove the last item of the list\n4-Exit");
 
-                int input = Validator.GetValidSelection("Select a Menu Item (1, 2 or 3): ", 4, 1);
+                int input = Validator.GetValidSelection("Select a Menu Item (1, 2, 3, or 4): ", 4, 1);
                 if (input == 1)
                 {
                     countries = CountriesTextFile.readFromFile("countries.txt");
